@@ -24,3 +24,14 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+.action-button {
+  @apply inline-flex items-center justify-center
+  h-11 px-4 rounded-lg
+  font-medium
+  cursor-pointer shadow-sm
+  transition-all duration-200;
+}
+
+.action-button:hover {
+  @apply shadow-md scale-105;
+}
