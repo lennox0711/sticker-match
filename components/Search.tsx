@@ -11,9 +11,7 @@ export default function Search({
 }: SearchProps) {
   return (
     <div className="mb-10">
-      <h2 className="text-2xl text-black font-semibold mb-3">
-        Sticker suchen
-      </h2>
+      
 
       <input
         type="text"

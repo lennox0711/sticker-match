@@ -140,6 +140,11 @@ const [
   Record<string, number>
 >({});
 
+const [
+  showSettings,
+  setShowSettings,
+] = useState(false);
+
   // User laden
 
   useEffect(() => {
@@ -1787,16 +1792,28 @@ const sortedProfiles =
   Tauschliste kopieren
 </button>
 </div>
-<button
-  onClick={() => router.push("/")}
+<div
   className="
+    flex
+    justify-between
+    items-center
     mb-4
-    text-zinc-500
-    hover:text-zinc-900
   "
 >
-  ← Zur Sammlung
-</button>
+  <button
+    onClick={() =>
+      router.push("/")
+    }
+    className="
+      text-zinc-500
+      hover:text-zinc-900
+    "
+  >
+    ← Zur Sammlung
+  </button>
+
+ 
+</div>
 
 
     </main>

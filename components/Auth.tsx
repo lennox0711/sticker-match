@@ -116,7 +116,7 @@ setLoading(false);
 if (showRegister) {
 return (
 <div className="bg-white rounded-3xl p-6 shadow-sm">
-<h2 className="text-xl font-bold text-zinc-800 text-center mb-6">
+<h2 className="text-xl font-bold text-black text-center mb-6">
 Registrieren
 </h2>
 
@@ -128,7 +128,7 @@ Registrieren
         onChange={(e) =>
           setEmail(e.target.value)
         }
-        className="w-full border border-zinc-200 rounded-xl px-4 py-3 outline-none focus:border-zinc-400"
+        className="w-full border border-black rounded-xl px-4 py-3 text-black outline-none focus:border-black"
       />
 
       <input
@@ -140,7 +140,7 @@ Registrieren
             e.target.value
           )
         }
-        className="w-full border border-zinc-200 rounded-xl px-4 py-3 outline-none focus:border-zinc-400"
+        className="w-full border border-zinc-200 text-black rounded-xl px-4 py-3 text-blacl outline-none focus:border-zinc-400"
       />
 
       <input
@@ -152,7 +152,7 @@ Registrieren
             e.target.value
           )
         }
-        className="w-full border border-zinc-200 rounded-xl px-4 py-3 outline-none focus:border-zinc-400"
+        className="w-full border border-zinc-200 rounded-xl px-4 py-3 text-blackoutline-none focus:border-zinc-400"
       />
 
       <button
@@ -181,7 +181,7 @@ Registrieren
 
 return (
 <div className="bg-white rounded-3xl p-6 shadow-sm">
-<h2 className="text-xl font-bold text-zinc-800 text-center mb-6">
+<h2 className="text-xl font-bold text-black text-center mb-6">
 
 </h2>
 
@@ -193,7 +193,7 @@ return (
       onChange={(e) =>
         setEmail(e.target.value)
       }
-      className="w-full border border-zinc-200 rounded-xl px-4 py-3 outline-none focus:border-zinc-400"
+      className="w-full border border-zinc-200 rounded-xl px-4 py-3 text-black outline-none focus:border-zinc-400"
     />
 
     <input
@@ -205,7 +205,7 @@ return (
           e.target.value
         )
       }
-      className="w-full border border-zinc-200 rounded-xl px-4 py-3 outline-none focus:border-zinc-400"
+      className="w-full border border-zinc-200 rounded-xl px-4 py-3 text-black outline-none focus:border-zinc-400"
     />
 
     <button

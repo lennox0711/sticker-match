@@ -507,7 +507,7 @@ country.code
             Mein
           </span>
 
-          <h1 className="text-4xl font-bold text-zinc-900">
+          <h1 className="text-3xl font-bold text-zinc-900">
             Sticker-Tracker
           </h1>
         </div>
@@ -531,8 +531,11 @@ country.code
         duplicates={duplicates}
       />
    
-      <div className="sticky top-2 z-10 bg-white/90 backdrop-blur rounded-2xl shadow-md p-4 mb-6">
+     <div className="bg-white rounded-2xl shadow-md p-4 mb-6">
         <div className="grid grid-cols-2 gap-3">
+
+         
+
   <div>
     <h3 className="text-sm font-medium text-zinc-500 mb-2">
       Suche
@@ -544,20 +547,46 @@ country.code
       result={searchResult}
     />
   </div>
+   <div>
+  <h3 className="text-sm font-medium text-zinc-500 mb-2">
+    Tauschen
+  </h3>
 
-  <div>
-    <h3 className="text-sm font-medium text-zinc-500 mb-2">
-      Tauschen
-    </h3>
+  <button
+    onClick={() =>
+      router.push("/trade")
+    }
+    className="
+      w-full
+      h-[52px]
+      rounded-xl
+      border
+      border-black
+      bg-white
+      hover:bg-zinc-50
+      transition-all
+      flex
+      items-center
+      justify-between
+      px-4
+      text-black
+    "
+  >
+    <div className="flex items-center gap-2">
+      <span></span>
+      <span>
+        Tauschbörse
+      </span>
+    </div>
 
-    <button
-  onClick={() => router.push("/trade")}
-  className="..."
->
-  Tauschpartner finden
-</button>
-  </div>
+    <span>
+      →
+    </span>
+  </button>
 </div>
+  </div>
+
+  
 
         <div className="flex gap-2 flex-wrap mt-3">
           {[
