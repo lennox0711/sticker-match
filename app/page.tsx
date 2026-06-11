@@ -531,23 +531,21 @@ country.code
         duplicates={duplicates}
       />
    
-     <div className="bg-white rounded-2xl shadow-md p-4 mb-6">
-        <div className="grid grid-cols-2 gap-3">
+   <div
+  className="
+    sticky
+    top-0
+    z-20
+    bg-white
+    rounded-2xl
+    shadow-md
+    p-4
+    mb-4
+  "
+>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
 
-         
-
-  <div>
-    <h3 className="text-sm font-medium text-zinc-500 mb-2">
-      Suche
-    </h3>
-
-    <Search
-      search={search}
-      setSearch={setSearch}
-      result={searchResult}
-    />
-  </div>
-   <div>
+        <div>
   <h3 className="text-sm font-medium text-zinc-500 mb-2">
     Tauschen
   </h3>
@@ -584,11 +582,59 @@ country.code
     </span>
   </button>
 </div>
+  </div>  
+
+  <div>
+    <h3 className="text-sm font-medium text-zinc-500 mb-2">
+      Suche
+    </h3>
+
+   <div
+  className="
+    flex
+    gap-2
+    mb-3
+  "
+>
+  <div className="flex-1">
+    <Search
+      search={search}
+      setSearch={
+        setSearch
+      }
+    />
   </div>
+
+  <div
+    className="
+      min-w-[90px]
+      rounded-xl
+      bg-zinc-100
+      flex
+      items-center
+      justify-center
+      px-3
+      text-sm
+      font-medium
+      text-black
+    "
+  >
+    {searchResult}
+  </div>
+</div>
+  </div>
+  
 
   
 
-        <div className="flex gap-2 flex-wrap mt-3">
+    <div
+  className="
+    flex
+    gap-1
+    overflow-x-auto
+    mt-3
+  "
+>
           {[
   "alle",
   "fehlend",

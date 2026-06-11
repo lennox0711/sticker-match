@@ -25,12 +25,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 .action-button {
-  @apply inline-flex items-center justify-center
-  h-11 px-4 rounded-lg
-  font-medium
-  cursor-pointer shadow-sm
-  transition-all duration-200;
+  padding: 0.75rem 1rem;
+  border-radius: 1rem;
 }
+
+@media (max-width: 768px) {
+  .action-button {
+    padding: 0.4rem 0.7rem;
+    font-size: 0.8rem;
+  }
+}
+
 
 .action-button:hover {
   @apply shadow-md scale-105;
